@@ -1,0 +1,574 @@
+{
+    "columns": [
+        {
+            "name": "id",
+            "contaminated": true,
+            "message": "Een id kolom dient een unieke waarde te bevatten, deze kolom doet dat niet, en bevat twee keer de waarde 1008. Dit kan gemakkelijk opgelost worden in het bronsysteem of door een UNIQUE constraint op deze kolom toe te passen.",
+            "cells": [
+                {
+                    "value": "1001",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "1002",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "1003",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "1004",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "1005",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "1006",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "1007",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "1008",
+                    "contaminated": false,
+                    "message": "Met de waarde 1008 zelf is niks mis. TIP: probeer de tabelnaam eens :)"
+                },
+                {
+                    "value": "1008",
+                    "contaminated": false,
+                    "message": "Met de waarde 1008 zelf is niks mis. TIP: probeer de tabelnaam eens :)"
+                },
+                {
+                    "value": "1010",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                }
+            ]
+        }, 
+        {
+            "name": "aanmelder",
+            "contaminated": true,
+            "message": "Een kolom als aanmelder gaat vaak gebruikt worden om data per persoon te sorteren. Hoewel dit niet per se een probleem is, is het wel belangrijk dat er ook een unieke waarde aan die persoon toegekend is. De combinatie voor- en achternaam zelf is namelijk niet uniek.",
+            "cells": [
+                {
+                    "value": "Remco Dietten",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "Wil Schreur",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "Sjaak Jacobs",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "null",
+                    "contaminated": true,
+                    "message": "Dit was een weggevertje natuurlijk, een null waarde geeft aan dat een veld geen waarde heeft. Een service request heeft altijd een aamelder, anders bestaat die namelijk niet. Dit kan opgelost worden in het bronsysteem."
+                },
+                {
+                    "value": "Paulien Brinks",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "ROos Jagt",
+                    "contaminated": true,
+                    "message": "De twee eerste letters zijn een hoofdletter, bij een voornaam is dat nooit het geval. Hier is dus sprake van te weinig controle op invoerwaarden en kan gemakkelijk voorkomen worden."
+                },
+                {
+                    "value": "Toon Boom",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "Aad Dirks",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "Hein Euren",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "Wil Schreur",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                }
+            ]
+        },
+        {
+            "name": "afdeling",
+            "contaminated": false,
+            "message": "Deze kolom en kolomnaam zijn prima in orde.",
+            "cells": [
+                {
+                    "value": "Algemene zaken",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "Algemene zaken",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "Belangrijke zaken",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "Algemene zaken",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "Algemene zaken",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "Belangrijke zaken",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "Algemene zaken",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "Algemene zaken",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "null",
+                    "contaminated": false,
+                    "message": "Hoewel dit veld null is, waardoor het misschien een vervuilde cel lijkt, hoeft dat niet zo te zijn. Het kan namelijk ook betekenen dat dit verzoek nog niet toegekend is aan een afdeling en er dus een bepaalde hangt aan geen waarde. Het is belangrijk om hiervoor regels op te stellen en vast te leggen als onderdeel van Data Governance."
+                },
+                {
+                    "value": "Belangrijke zaken",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                }
+            ]
+        },
+        {
+            "name": "locatie",
+            "contaminated": false,
+            "message": "Deze kolom en kolomnaam zijn prima in orde.",
+            "cells": [
+                {
+                    "value": "Amsterdam",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "utrecht",
+                    "contaminated": true,
+                    "message": "Namen van steden horen met een hoofdletter te beginnen. Dit probleem kan gemakkelijk opgelost worden door goede inputvalidatie toe te passen in het bronsysteem."
+                },
+                {
+                    "value": "Amsterdam",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "Amsterdam",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "Utrecht",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "Rotterdam",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "Rotterdam",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "Utrecht",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "Den Haag",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "Den Haag",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                }
+            ]
+        },
+        {
+            "name": "titel",
+            "contaminated": false,
+            "message": "Deze kolom en kolomnaam zijn prima in orde.",
+            "cells": [
+                {
+                    "value": "Laptop kapot",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "Nieuw beeldscherm",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "Hectometerpaaltje",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "Beeldscherm",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "Error 404",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "Wifi kapot",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "foutje met git",
+                    "contaminated": false,
+                    "message": "Hoewel dit veld niet met een hoofdletter begint, is dat niet per sé verkeerd. Vastleggen aan welke regels welke cellen moeten voldoen is een essentieel onderdeel van Data Governance."
+                },
+                {
+                    "value": "PC opstarten",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "Werkplek",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "Rechten stagiaire",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                }
+            ]
+        },
+        { 
+            "name": "datumAanmk",
+            "contaminated": false,
+            "message": "Deze kolom en kolomnaam zijn prima in orde.",
+            "cells": [
+                {
+                    "value": "13-01-2021",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "11-01-2021",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "15-jan-2021",
+                    "contaminated": true,
+                    "message": "Overal wordt de maand in een nummer aangegeven, maar deze cel doet het met een afkorting. Uniformiteit is een belangrijk onderdeel van datakwaliteit en dit kan gemakkelijk verholpen worden in het invoersysteem of in het ETL (Extract, Transform and Load) proces of door het kolomtype naar DATE te zetten (aanbevolen)."
+                },
+                {
+                    "value": "02-01-2021",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "21-12-2020 14:23:58",
+                    "contaminated": true,
+                    "message": "In deze tabel wordt naast de datum ook de tijd opgeslagen. Een belangrijk deel van datakwaliteit is uniformiteit en dit soort fouten kunnen gemakkelijk voorkomen worden in het invoersysteem, in het ETL (Extract, Transform and Load) proces of door het kolomtype naar DATE te zetten (aanbevolen)."
+                },
+                {
+                    "value": "16-12-2020",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "13-01-2020",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "01-12-2020",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "32-12-2020",
+                    "contaminated": true,
+                    "message": "32 December is geen geldige datum, hieruit blijkt dat werknemers de waarde met de hand invoeren en dat dit geen veld van het type DATE is. Dit kan voorkomen worden door controles in het invoersysteem en het datumtype te wijzigen naar DATE."
+                },
+                {
+                    "value": "04-01-2020",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                }
+            ]
+        }, 
+        {
+            "name": "eind_datum",
+            "contaminated": true,
+            "message": "Alle tabelnamen zijn in het Nederlands met pascalCase, deze gebruikt een underscore op de positie in plaats van een spatie. Uniformiteit is een belangrijk deel van datakwaliteit en daarom is deze kolomnaam eigenlijk fout.",
+            "cells": [
+                {
+                    "value": "19-03-2021",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "21-04-2021",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "12-01-2021",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "14-01-2021",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "03-01-2021",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "31Oct2022",
+                    "contaminated": true,
+                    "message": "De datumvelden in deze kolom gebruiken een nummer om de maand aan te geven terwijl deze kolom dat met een afkorting doet. Dit kan voorkomen worden door controles in het invoersysteem en het datumtype te wijzigen naar DATE."
+                },
+                {
+                    "value": "21-01-2021",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "12-04-2021",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "08-10-2019",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "31-12-5999",
+                    "contaminated": true,
+                    "message": "Het kan voorkomen dat een veld geen waarde heeft, dat kan ook waarde geven afhankelijk van de context. In dit geval is een verzoek waarschijnlijk nog niet afgehandelt, het zou dan beter zijn om de waarde op null te zetten in plaats van een rare waarde te kiezen."
+                }
+            ]
+        },
+        {
+            "name": "afkorting",
+            "contaminated": false,
+            "message": "Deze kolom en kolomnaam zijn prima in orde.",
+            "cells": [
+                {
+                    "value": "AG",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "AG",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "BZ",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "AG",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "AG",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "BZ",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "AG",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "AG",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "AG",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "BZ",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                }
+            ]
+        },
+        {
+            "name": "manager",
+            "contaminated": false,
+            "message": "Deze kolom en kolomnaam zijn prima in orde.",
+            "cells": [
+                {
+                    "value": "Pien Rehorst",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "Wouters, Jan",
+                    "contaminated": true,
+                    "message": "In alle cellen wordt gebruik gemaakt van het formaat voornaam+achternaam terwijl het hier omgedraait is met een komma. Dit kan bijvoorbeeld opgelost worden door een betere validatie in het invoersysteem, of beter: door een aparte kolom voor de voor- en achternaam te maken."
+                },
+                {
+                    "value": "Suus Bekker",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "CÃ©dric de Vos",
+                    "contaminated": true,
+                    "message": "De naam Cédric is hier raar geschreven, dat komt door een vertaling van de UTF-8 encoding naar ASCII. Het is belangrijk om dit soort situaties op te sporen en te zorgen dat dezelfde encoding overal gebruikt wordt."
+                },
+                {
+                    "value": "Jolien Hansma",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "Kevin Sellen",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "null",
+                    "contaminated": false,
+                    "message": "Hoewel deze waarde null is kan dat ook waarde geven, afhankelijk van de context. Hier kan het bijvoorbeeld zo zijn dat dit verzoek nog niet toegekend is en daarom nog geen manager heeft. Het is belangrijk hierover regels te maken en vast te leggen als onderdeel van Data Governance."
+                },
+                {
+                    "value": "Naud Staman",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "Joris Dutler",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "Lieke Zwarts",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                }
+            ]
+        }, 
+        {
+            "name": "finished",
+            "contaminated": true,
+            "message": "Alle kolomnamen zijn in het Nederlands behalve deze, die in het Engels is. Uniformiteit is een belangrijk onderdeel van datakwaliteit en daarom kan deze tabel beter afgerond heten.",
+            "cells": [
+                {
+                    "value": "TRUE",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "TRUE",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "TRUE",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "FALSE",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "FALSE",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "TRUE",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "FALSE",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "TRUE",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "FALSE",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                },
+                {
+                    "value": "TRUE",
+                    "contaminated": false,
+                    "message": "Met deze individuele waarde is niks mis."
+                }
+            ]
+        }
+    ]
+}

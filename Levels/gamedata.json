@@ -1,0 +1,70 @@
+{
+    "columns": [
+        {
+            "name": "CityName",
+            "contaminated": true,
+            "message": "Gewoon voor de lol",
+            "cells": [
+                {
+                    "value": "Amsterdam",
+                    "contaminated": true,
+                    "message": "Natuurlijk is Amsterdam vervuild!"
+                },
+                {
+                    "value": "Rotterdam",
+                    "contaminated": false,
+                    "message": "Nee deze is niet vervuild!"
+                },
+                {
+                    "value": "Den Haag",
+                    "contaminated": false,
+                    "message": "Deze is ook niet vervuild"
+                }
+            ]
+        },
+        {
+            "name": "Population",
+            "contaminated": false,
+            "message": "Dat is gewoon aauuwe",
+            "cells": [
+                {
+                    "value": "869.709",
+                    "contaminated": true,
+                    "message": "Er staat een punt tussen, dus deze waarde is automatisch vervuild! Ohja, dit bericht is ook onnodig lang gemaakt om te kijken hoe onze UI scaled. Leuk hè?"
+                },
+                {
+                    "value": "581750",
+                    "contaminated": false,
+                    "message": "Nope klopt gewoon"
+                },
+                {
+                    "value": "544766",
+                    "contaminated": false,
+                    "message": "Deze is ook niet vervuild"
+                }
+            ]
+        },
+        {
+            "name": "IsCapital",
+            "contaminated": false,
+            "message": "niet contaminated",
+            "cells": [
+                {
+                    "value": "Correct",
+                    "contaminated": true,
+                    "message": "\"Correct\" is geen geldige boolean type value"
+                },
+                {
+                    "value": "False",
+                    "contaminated": false,
+                    "message": "Nope klopt gewoon"
+                },
+                {
+                    "value": "False",
+                    "contaminated": false,
+                    "message": "Deze is ook niet vervuild"
+                }
+            ]
+        }
+    ]
+}
